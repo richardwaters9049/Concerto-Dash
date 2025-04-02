@@ -132,8 +132,6 @@ curl -X POST http://localhost:5000/api/interviews \
   -d '{"title": "Senior .NET Developer Interview", "scheduledAt": "2024-05-20T14:00"}'
 ```
 
----
-
 ```bash
 # 1. Register as a recruiter at http://localhost:3000/register
 
