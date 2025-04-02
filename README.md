@@ -133,13 +133,13 @@ curl -X POST http://localhost:5000/api/interviews \
 ```
 
 ```bash
-# 1. Register as a recruiter at http://localhost:3000/register
+** 1. Register as a recruiter at http://localhost:3000/register
 
-# 2. Create interviews with candidate details
+** 2. Create interviews with candidate details
 
-# 3. Track progress in real-time:
+** 3. Track progress in real-time:
 
-# 4. Dashboard Preview
+** 4. Dashboard Preview
 ```
 
 ---
