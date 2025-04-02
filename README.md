@@ -43,10 +43,14 @@ The **Concerto Interview Dashboard** helps companies streamline technical interv
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.3-3178C6?logo=typescript)  
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-06B6D4?logo=tailwind-css)
 
+---
+
 **Backend**:  
 ![.NET](https://img.shields.io/badge/.NET-8-512BD4?logo=dotnet)  
 ![EntityFramework](https://img.shields.io/badge/EF%20Core-8-FFFFFF?logo=entity-framework)  
 ![SQL Server](https://img.shields.io/badge/SQL%20Server-2022-CC2927?logo=microsoft-sql-server)
+
+---
 
 **Tools**:  
 ![Docker](https://img.shields.io/badge/Docker-26.0-2496ED?logo=docker)  
@@ -83,3 +87,60 @@ dotnet ef database update --project ../Concerto.Interview.Infrastructure
 # 5. Start the .NET API
 dotnet run
 ```
+
+---
+
+## 🌍 **Environment Variables (Create .env):**
+
+```ini
+JwtSettings__Secret=your_super_secure_key_here
+JwtSettings__Issuer=Concerto.Interview
+JwtSettings__Audience=Concerto.Frontend
+```
+
+---
+
+## 🌍 **🎨 Frontend Setup:**
+
+```bash
+# 1. Navigate to frontend
+cd ../../frontend/concerto-interview-dashboard
+
+# 2. Install dependencies
+npm install
+
+# 3. Start development server
+npm run dev
+```
+
+---
+
+## 🌍 **Environment Variables (Create .env):**
+
+```ini
+NEXT_PUBLIC_API_URL=http://localhost:5000
+```
+
+🖥️ Usage
+
+**Example API Call**:
+
+```bash
+curl -X POST http://localhost:5000/api/interviews \
+  -H "Authorization: Bearer YOUR_JWT_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"title": "Senior .NET Developer Interview", "scheduledAt": "2024-05-20T14:00"}'
+```
+
+---
+
+```bash
+# 1. Register as a recruiter at http://localhost:3000/register
+
+# 2. Create interviews with candidate details
+
+# 3. Track progress in real-time:
+Dashboard Preview
+```
+
+---
